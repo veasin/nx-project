@@ -21,11 +21,13 @@
       "your_project\\":"src/"
     }
   },
+  "config": {
+    "process-timeout": 0
+  },
   "scripts": {
-    "dev": "@php -d max_execution_time=0 -S localhost:8080 web/index.php",
-    "routeMake": "nx\\tools\\routeAnnotation::Make",
-    "routeHttp": "nx\\tools\\routeHttp::Make",
-    "route": "@routeMake --sort \\your_project\\controllers\\",
-    "routeO": "@routeMake --sort \\your_project\\controllers\\ -o"
+    "dev": "@php -S localhost:8080 web/index.php",
+    "route": "@_routeMake --sort \\your_project\\controllers\\",
+    "_routeMake": "nx\\tools\\routeAnnotation::Make",
+    "_routeHttp": "nx\\tools\\routeHttp::Make"
   }
 }
