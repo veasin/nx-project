@@ -1,6 +1,6 @@
 <?php
 return [
-	'db/pdo' => [
+	'db/pdo' =>[
 		'default' => [
 			'dsn'=>'mysql:dbname=db_name;host=localhost;charset=utf8mb4',
 			'username'=>'root',
