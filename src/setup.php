@@ -14,4 +14,7 @@ return [
 		'actions' => [],
 		'rules' =>[],
 	],
+	'log/ws'=>[
+		'uri'=>'http://thiz.cn:10010/log',
+	],
 ];
